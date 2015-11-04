@@ -32,3 +32,129 @@ and Blueprint http://www.blueprintcss.org/
 
 }
 
+/* =Header
+----------------------------------------------- */
+
+#logo {
+	margin-left: 26%;
+	margin-top: 3%;
+}
+
+#head-cyan {
+	width: 100%;
+	height: 2%;
+	top: 0;
+	background: #25cbd3;
+}
+
+#icone {
+	right: 25%;
+	position:absolute;
+	top: 72%;
+}
+
+#icone ul {list-style:none;}
+#icone li {display:inline; padding-left: 3px;}
+
+
+/* =Menu
+----------------------------------------------- */
+
+#nav {
+	width:100%;
+	position:absolute;
+	left:0;
+	background:#7a868c;
+}
+
+.main-navigation a {
+	display: block;
+	text-decoration: none;
+	line-height: 1;
+    padding: 20px 100px 16px;
+	text-transform: uppercase;
+	font-family: 'circulamedium', sans-serif;
+	color: #fff;
+	font-size: 24px;
+}
+
+.main-navigation li {
+	float: left;
+	position: relative;
+	left: 50%;
+	text-align: center;
+}
+
+.main-navigation a:hover {
+	background: #8c979d !important;
+	color: #fff;
+}
+
+.main-navigation ul ul {
+	background: #8c979d !important;
+	display: none;
+	float: left;
+	position: absolute;
+	top: 3.7em;
+	right: auto;
+	left: 0;
+	z-index: 99999;
+}
+
+.main-navigation li:hover > a {
+	background: #8c979d;
+	color: #fff;
+}
+.main-navigation ul ul :hover > a {
+}
+.main-navigation ul ul a:hover {
+	background: #8c979d;
+}
+.main-navigation ul li:hover > ul {
+	display: block;
+	background: #8c979d;
+}
+
+/* =Content
+----------------------------------------------- */
+
+#main {
+	max-width: 1075px;
+	margin: 4em auto 0;
+	clear: both;
+	background: rgba(255,255,255,1);
+	padding: 0 3% 2%;
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+}
+
+/* =Responsive Design
+------------------------------------------------- */
+@media screen and (max-width: 800px) {
+	#content article {
+		width: 30.6%;
+	}
+	#content article:nth-child(3n+3) {
+		margin-right: 0 !important;
+	}
+	#content article:nth-child(4n+4) {
+		margin-right: 4%;
+	}
+	.main-navigation a {
+		padding: 20px 25px 16px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.main-navigation a {
+		padding: 20px 10px 16px;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+
+   .main-navigation a {
+		font-size: 16px !important;
+	}
+}
