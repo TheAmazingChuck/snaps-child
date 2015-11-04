@@ -26,20 +26,33 @@
 <div id="page" class="hfeed site">
 	<?php do_action( 'before' ); ?>
 	<?php $header_image = get_header_image(); ?>
+    
+    <div id="head-cyan">&nbsp;</div>
 
 	<header id="masthead" class="site-header" role="banner" <?php if ( ! empty( $header_image ) ) { ?>style="background:url(<?php header_image(); ?>) no-repeat center center; background-size: cover; height:<?php echo get_custom_header()->height; ?>px;" <?php } ?>>
 		<hgroup>
-			<div class="site-text">
+			<div id="logo">
               <img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo.png" />
 			</div>
+            <div id="icone">
+              <ul>
+                <li><a href="https://www.behance.net/hlanglais" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo-be.png" /></a></li>
+                <li><a href="hlnlanglais@gmail.com" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo-google.png" /></a></li>
+                <li><a href="https://www.facebook.com/helene.langlais" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo-facebook.png" /></a></li>
+                <li><a href="https://instagram.com/helene_langlais/" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo-insta.png" /></a></li>
+              </ul>
+            </div>
 		</hgroup>
 	</header><!-- #masthead .site-header -->
-
-	<div id="main" class="site-main">
-		<nav id="anchor" role="navigation" class="site-navigation main-navigation">
+    
+    <div id="nav">
+    <nav id="anchor" role="navigation" class="site-navigation main-navigation">
 			<h1 class="assistive-text"><?php _e( 'Menu', 'snaps' ); ?></h1>
 			<div class="assistive-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'snaps' ); ?>"><?php _e( 'Skip to content', 'snaps' ); ?></a></div>
 
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 
-		</nav><!-- .site-navigation .main-navigation -->
+		</nav>
+        </div><!-- .site-navigation .main-navigation -->
+
+	<div id="main" class="site-main">
