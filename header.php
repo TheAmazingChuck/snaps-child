@@ -32,7 +32,7 @@
 	<header id="masthead" class="site-header" role="banner" <?php if ( ! empty( $header_image ) ) { ?>style="background:url(<?php header_image(); ?>) no-repeat center center; background-size: cover; height:<?php echo get_custom_header()->height; ?>px;" <?php } ?>>
 		<hgroup>
 			<div id="logo">
-              <img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo.png" />
+              <a href="<?php bloginfo('url'); ?>/index.php/blog/"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo.png" /></a>
 			</div>
             <div id="icone">
               <ul>
