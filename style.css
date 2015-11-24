@@ -117,21 +117,6 @@ and Blueprint http://www.blueprintcss.org/
 
 /* =Content
 ----------------------------------------------- */
-#home-page {
-	background-color: #25cbd3;
-	width:100%;
-	height: 100%;
-	overflow:hidden;
-	position:absolute;
-	top: 0;
-	left: 0;
-}
-
-#home-page img {
-	margin: auto;
-	display:block;
-	margin-top: 2%;
-}
 
 #main {
 	max-width: 1300px;
@@ -160,6 +145,49 @@ and Blueprint http://www.blueprintcss.org/
 
 #article-center {
 	margin-left:37px;
+}
+
+/* =Homepage
+----------------------------------------------- */
+
+#home-page {
+	background-color: #25cbd3;
+	width:100%;
+	height: 100%;
+	overflow:hidden;
+	position:absolute;
+	top: 0;
+	left: 0;
+}
+
+#home-page img {
+	margin: auto;
+	display:block;
+	margin-top: 2%;
+}
+
+/* =Footer
+----------------------------------------------- */
+
+#secondary {
+	max-width: 100%;
+	margin: 0;
+	overflow: hidden;
+	background: #25cbd3;
+	padding: 5em;
+}
+
+#secondary, #secondary a, #colophon, #colophon a{color: #fff;}
+
+.center-container {
+	margin:auto;
+	width: 100%;
+}
+
+#colophon {
+	clear: both;
+	padding-top: 3%;
+	background: #25cbd3;
 }
 
 /* =Responsive Design
