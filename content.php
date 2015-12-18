@@ -4,8 +4,8 @@
  * @since Snaps 1.0
  */
 ?>
-
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<li>
+<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<div class="post-format-content">
 		<div class="post-thumbnail">
@@ -21,4 +21,5 @@
 		</div>
 	</div>
 
-</article><!-- #post-<?php the_ID(); ?> -->
+</div><!-- #post-<?php the_ID(); ?> -->
+</li>
