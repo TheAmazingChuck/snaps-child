@@ -14,10 +14,8 @@
 
 get_header(); ?>
 
-		<div id="primary" class="content-area">
-			<div id="content" class="site-content" role="main">
-              <div id="article-center">
-
+	 <div id="accueil">
+            <ul>
 			<?php if ( have_posts() ) : ?>
 
 				<?php /* Start the Loop */ ?>
@@ -40,8 +38,7 @@ get_header(); ?>
 				<?php get_template_part( 'no-results', 'index' ); ?>
 
 			<?php endif; ?>
-              </div>
-			</div><!-- #content .site-content -->
-		</div><!-- #primary .content-area -->
+            </ul>
+	 </div><!-- #primary .content-area -->
 
 <?php get_footer(); ?>

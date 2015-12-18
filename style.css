@@ -137,15 +137,10 @@ and Blueprint http://www.blueprintcss.org/
 	margin-top: 2%;
 	clear: both;
 	background: rgba(255,255,255,0.8);
-	padding: 0 3% 2%;
+	padding: 0;
 	overflow: hidden;
 	position: relative;
 	z-index: 1;
-}
-
-#primary {
-	clear: both;
-	padding-top: 0.5%;
 }
 
 .post-format-content {
@@ -162,18 +157,44 @@ and Blueprint http://www.blueprintcss.org/
 
 .post-thumbnail img {
 	margin:auto;
-}	
+}
 
-#content article {
-	float: left;
-    margin-right: 0;
+.featured-image {
+    display: table-cell;
     position: relative;
-    width: 300px;
-    margin-bottom: 13%;
-	left: 20.5%;
+    transition: opacity .25s ease-in-out, background .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out, background .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out, background .25s ease-in-out;
+    vertical-align: middle;
+    z-index: 1;
+    color: #fff;
+    text-decoration: none;
+    opacity: 0;
+    padding: 10%;
+	font-family: 'circulamedium', Arial, Helvetica, sans-serif;
 }
 
-#content article:first-child {
-	margin-left: -4%;
+.featured-image:hover {
+	opacity: 0.9;
+	color: #fff;
+	background: none;
+	font-family: 'circulamedium', Arial, Helvetica, sans-serif;
 }
-	
+
+#accueil {
+	width: 100%;
+	text-align:center;
+	overflow:hidden; padding-bottom: 10%
+}
+
+#accueil ul {
+	list-style: none;
+	display: table;
+	margin: 0 auto;
+}
+
+#accueil li {
+	display: block;
+	float: left;
+	width: 300px;
+}
