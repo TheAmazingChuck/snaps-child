@@ -4,7 +4,6 @@
  * @since Snaps 1.0
  */
 ?>
-
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<div class="post-format-content">

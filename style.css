@@ -127,3 +127,53 @@ and Blueprint http://www.blueprintcss.org/
 	font-family: 'circulamedium', Arial, Helvetica, sans-serif;
 	font-size:24px;
 }
+
+/* =Content
+----------------------------------------------- */
+
+#main {
+	max-width: 100%;
+	margin: -3.05em auto 0;
+	margin-top: 2%;
+	clear: both;
+	background: rgba(255,255,255,0.8);
+	padding: 0 3% 2%;
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+}
+
+#primary {
+	clear: both;
+	padding-top: 0.5%;
+}
+
+.post-format-content {
+	position: relative;
+	background: #fff;
+}
+
+.post-thumbnail {
+	max-width: 100%;
+	height: auto;
+	overflow: hidden;
+	text-align:center;
+}
+
+.post-thumbnail img {
+	margin:auto;
+}	
+
+#content article {
+	float: left;
+    margin-right: 0;
+    position: relative;
+    width: 300px;
+    margin-bottom: 13%;
+	left: 20.5%;
+}
+
+#content article:first-child {
+	margin-left: -4%;
+}
+	
