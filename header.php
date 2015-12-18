@@ -45,14 +45,7 @@
 		</hgroup>
 	</header><!-- #masthead .site-header -->
     
-    <div id="nav">
-    <nav id="anchor" role="navigation" class="site-navigation main-navigation">
-			<h1 class="assistive-text"><?php _e( 'Menu', 'snaps' ); ?></h1>
-			<div class="assistive-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'snaps' ); ?>"><?php _e( 'Skip to content', 'snaps' ); ?></a></div>
-
-			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-
-		</nav>
+    <div id="custom-nav"><?php wp_nav_menu( array( 'theme_location' => 'menu-custom' ) ); ?>
         </div><!-- .site-navigation .main-navigation -->
 
 	<div id="main" class="site-main">

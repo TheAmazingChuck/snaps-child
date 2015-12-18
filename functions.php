@@ -12,3 +12,9 @@ function my_enqueue_styles() {
     /* Always load active theme's style.css. */
     wp_enqueue_style( 'style', get_stylesheet_uri() );
 }
+
+function register_my_menu() {
+  register_nav_menu('menu-custom',__( 'Menu custom' ));
+}
+
+add_action( 'init', 'register_my_menu' );
