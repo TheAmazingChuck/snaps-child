@@ -1,135 +1,168 @@
 /*
-Theme Name: Snaps Child
+
+Theme Name: snaps child
+
 Theme URI: http://graphpaperpress.com/themes/snaps/
+
 Author: TAChuck
+
 Author URI: http://helenelcg.com
+
 Description: Thème portfolio pour le site de helenelcg.com
-Template: Snaps
+
+Template: snaps
+
 Version: 1.0.3
+
 License: GNU General Public License
+
 License URI: license.txt
+
 Tags: black, gray, white, dark, light, one-column, two-columns, four-columns, fluid-layout, responsive-layout, custom-background, custom-header, custom-menu, editor-style, featured-images, post-formats, threaded-comments, translation-ready, photoblogging
 
+
+
 This theme, like WordPress, is licensed under the GPL.
+
 Use it to make something cool, have fun, and share what you've learned with others.
 
+
+
 Resetting and rebuilding styles have been helped along thanks to the fine work of
+
 Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
+
 along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+
 and Blueprint http://www.blueprintcss.org/
+
 */
 
+
+
 @font-face {
-    font-family: 'circulamedium';
-    src: url('fonts/circula-medium-webfont.eot');
-    src: url('fonts/circula-medium-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/circula-medium-webfont.woff2') format('woff2'),
-         url('fonts/circula-medium-webfont.woff') format('woff'),
-         url('fonts/circula-medium-webfont.ttf') format('truetype'),
-         url('fonts/circula-medium-webfont.svg#circulamedium') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
+	font-family: 'circulamedium';
+	src: url('fonts/circula-medium-webfont.eot');
+	src: url('fonts/circula-medium-webfont.eot?#iefix') format('embedded-opentype'),  url('fonts/circula-medium-webfont.woff2') format('woff2'),  url('fonts/circula-medium-webfont.woff') format('woff'),  url('fonts/circula-medium-webfont.ttf') format('truetype'),  url('fonts/circula-medium-webfont.svg#circulamedium') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
+/* =Global
 
-/* =Header
 ----------------------------------------------- */
+
+
+
+h1 {
+	font-family: 'circulamedium', Arial, Helvetica, sans-serif;
+}
+h2 {
+	font-size: 1.8em;
+	margin-bottom: 0.1em;
+	margin-top: 0.5em;
+}
+/* =Header
+
+----------------------------------------------- */
+
+
 
 #logo {
 	margin-left: 26%;
 	margin-top: 3%;
 }
-
 #head-cyan {
 	width: 100%;
 	height: 2%;
 	top: 0;
 	background: #25cbd3;
 }
-
 #icone {
 	right: 25%;
-	position:absolute;
+	position: absolute;
 	top: 72%;
 }
-
-#icone ul {list-style:none;}
-#icone li {display:inline; padding-left: 3px;}
-
+#icone ul {
+	list-style: none;
+}
+#icone li {
+	display: inline;
+	padding-left: 3px;
+}
 /* =Homepage
+
 ----------------------------------------------- */
+
+
 
 #home-page {
 	background-color: #25cbd3;
-	width:100%;
+	width: 100%;
 	height: 100%;
-	overflow:hidden;
-	position:absolute;
+	overflow: hidden;
+	position: absolute;
 	top: 0;
 	left: 0;
 }
-
 #home-page img {
 	margin: auto;
-	display:block;
+	display: block;
 	margin-top: 2%;
 }
-
 /* =Footer
+
 ----------------------------------------------- */
+
+
 
 #secondary {
 	max-width: 100%;
 	margin: 0;
 	overflow: hidden;
 	background: #25cbd3;
-	padding: 5em;
+	padding: 3em;
 }
-
-#secondary, #secondary a, #colophon, #colophon a{color: #fff;}
-
-.center-container {
-	margin:auto;
-	width: 100%;
+#secondary, #secondary a, #colophon, #colophon a {
+	color: #fff;
 }
-
 #colophon {
 	clear: both;
 	padding-top: 3%;
 	background: #25cbd3;
 }
-
 /* =Menu
+
 ----------------------------------------------- */
+
+
 
 #custom-nav {
 	width: 100%;
 	background: #7a868c;
-	overflow:hidden;
-	text-align:center;
+	overflow: hidden;
+	text-align: center;
 }
-
 #custom-nav ul {
 	list-style: none;
 	display: table;
 	margin: 0 auto;
 }
-
 #custom-nav li {
 	display: block;
 	float: left;
 	width: 300px;
 }
-
 #custom-nav a {
 	color: #fff;
 	text-decoration: none;
 	font-family: 'circulamedium', Arial, Helvetica, sans-serif;
-	font-size:24px;
+	font-size: 24px;
 }
-
 /* =Content
+
 ----------------------------------------------- */
+
+
 
 #main {
 	max-width: 100%;
@@ -142,59 +175,80 @@ and Blueprint http://www.blueprintcss.org/
 	position: relative;
 	z-index: 1;
 }
-
+.single #content,  .page #content,  .error404 #content {
+	padding: 3% 3% 3%;
+	overflow: hidden;
+}
 .post-format-content {
 	position: relative;
 	background: #fff;
 }
-
 .post-thumbnail {
 	max-width: 100%;
 	height: auto;
 	overflow: hidden;
-	text-align:center;
+	text-align: center;
 }
-
 .post-thumbnail img {
-	margin:auto;
+	margin: auto;
 }
-
 .featured-image {
-    display: table-cell;
-    position: relative;
-    transition: opacity .25s ease-in-out, background .25s ease-in-out;
-   -moz-transition: opacity .25s ease-in-out, background .25s ease-in-out;
-   -webkit-transition: opacity .25s ease-in-out, background .25s ease-in-out;
-    vertical-align: middle;
-    z-index: 1;
-    color: #fff;
-    text-decoration: none;
-    opacity: 0;
-    padding: 10%;
+	display: table-cell;
+	position: relative;
+	transition: opacity .25s ease-in-out, background .25s ease-in-out;
+	-moz-transition: opacity .25s ease-in-out, background .25s ease-in-out;
+	-webkit-transition: opacity .25s ease-in-out, background .25s ease-in-out;
+	vertical-align: middle;
+	z-index: 1;
+	color: #fff;
+	text-decoration: none;
+	opacity: 0;
+	padding: 10%;
 	font-family: 'circulamedium', Arial, Helvetica, sans-serif;
 }
-
 .featured-image:hover {
 	opacity: 0.9;
 	color: #fff;
 	background: none;
 	font-family: 'circulamedium', Arial, Helvetica, sans-serif;
 }
-
 #accueil {
 	width: 100%;
-	text-align:center;
-	overflow:hidden; padding-bottom: 10%
+	text-align: center;
+	overflow: hidden;
+	padding-bottom: 10%
 }
-
 #accueil ul {
 	list-style: none;
 	display: table;
-	margin: 0 auto;
+	margin: auto;
+	margin-top: 2%;
 }
-
 #accueil li {
 	display: block;
 	float: left;
 	width: 300px;
+}
+.article {
+	margin: auto;
+}
+.article-entry-content {
+	width: 60%;
+	margin: auto;
+	padding-bottom: 2%;
+}
+.article-entry-header {
+	width: 60%;
+	margin: auto;
+	color: #25cbd3;
+}
+.single #nav-below {
+	width: 60%;
+	float: none;
+	margin: auto;
+	border-top: 5px solid #666666;
+	padding: 10px 0;
+}
+.title-block a {
+	color: #25cbd3 !important;
 }

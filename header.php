@@ -12,7 +12,7 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width" />
-<title><?php wp_title( '|', true, 'right' ); ?></title>
+<title>Helene Langlais - Creation graphique</title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <!--[if lt IE 9]>
@@ -37,7 +37,7 @@
             <div id="icone">
               <ul>
                 <li><a href="https://www.behance.net/hlanglais" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo-be.png" /></a></li>
-                <li><a href="hlnlanglais@gmail.com" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo-google.png" /></a></li>
+                <li><a href="../snaps-child-master/hlnlanglais@gmail.com" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo-google.png" /></a></li>
                 <li><a href="https://www.facebook.com/helene.langlais" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo-facebook.png" /></a></li>
                 <li><a href="https://instagram.com/helene_langlais/" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo-insta.png" /></a></li>
               </ul>
